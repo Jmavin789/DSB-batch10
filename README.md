@@ -12,3 +12,10 @@ My data science and analytics project
 8.Intro to Python
 9.Essential Python for Data analyst
 10. Looker Dashboard
+
+## Contact Me
+rsresuwan@gmail.com
+
+## Image 
+![Albert Einstein](https://upload.wikimedia.org/wikipedia/commons/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg)
+

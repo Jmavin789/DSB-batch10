@@ -1,0 +1,41 @@
+<cafe>
+    <menu>
+        <name>esyen</name> 
+        <price>65</price>
+        <price>85</price>
+        <size>small</size>
+        <size>medium</size>
+    </menu>
+    <menu>
+        <name>cocoa</name>
+        <price>50</price>
+        <price>70</price>
+        <size>small</size>
+        <size>medium</size>
+    </menu>
+    <menu>
+        <name>tea</name>
+        <price>40</price>
+        <price>60</price>
+        <size>small</size>
+        <size>medium</size>
+    </menu>
+    <menu>
+        <name>lemon tea</name>
+        <price>45</price>
+        <price>65</price>
+        <size>small</size>
+        <size>medium</size>
+    </menu>
+    <menu>
+        <name>fresh milk</name>
+        <price>50</price>
+        <price>70</price>
+        <size>small</size>
+        <size>medium</size>
+    </menu>
+    <menu>
+        <name>fresh water</name>
+        <price>20</price>
+    </menu>
+</cafe>

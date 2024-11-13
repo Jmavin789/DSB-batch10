@@ -1,0 +1,27 @@
+<cafe> 
+    <drink>    
+        <name>esyen</name> 
+        <price>65</price>
+        <size>M</size>
+    </drink>
+    <drink>    
+        <name>tea</name> 
+        <price>50</price>
+        <size>L</size>
+    </drink>
+    <drink>    
+        <name>cocoe</name> 
+        <price>55</price>
+        <size>M</size>
+    </drink>
+    <drink>    
+        <name>Late</name> 
+        <price>65</price>
+        <size>M</size>
+    </drink>
+    <drink>    
+        <name>water</name> 
+        <price>30</price>
+        <size>L</size>
+    </drink>
+</cafe>

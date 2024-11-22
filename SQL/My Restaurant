@@ -1,0 +1,110 @@
+ --Staff--
+create table staff (
+  staff_id int primary KEY,
+  staff_name TEXT,
+  possition TEXT
+);
+
+-- customers -- 
+create table customers (
+	customer_id TEXT PRIMARY KEY,
+  customer_name TEXT, 
+  gender TEXT 
+);
+
+--Menu--
+CREATE TABLE menu (
+  menu_id TEXT PRIMARY KEY,
+  name TEXT,
+  price REAL,
+  category TEXT
+  );
+
+--Transaction--
+CREATE TABLE transactions (
+    transactions_id TEXT primary key,
+    customer_id TEXT,
+    staff_id int,
+    menu_id TEXT,
+    orders_date datetime
+  );
+
+insert into staff values
+(1, 'Koii','waiter'),
+(2, 'Jane','waiter'),
+(3, 'Dave','waiter'),
+(4, 'Star','chef');
+
+insert into customers values
+ ('C01','Mario','M'),
+ ('C02','Labubu','F'),
+ ('C03','Smile','F'),
+ ('C04','Jin','F'),
+ ('C05','Harry','M');
+
+insert into menu values
+('M01','Margherita Pizza',200,'food'),
+('M02','Papaya salad',60,'food'),
+('M03','Fried rice',50,'food'),
+('M04','lemon pudding',40,'dessert'),
+('M05','chocolate mousse',55,'dessert'),
+('M06','hot chocolate',60,'drink'),
+('M07','water',10,'drink'),
+('M08','coke',20,'drink');
+
+insert into transactions values
+('T01','C03',1,'M01','2024-03-22 10:00:00'),
+('T02','C01',2,'M02','2024-03-23 11:00:00'),
+('T03','C05',3,'M05','2024-03-23 13:00:00'),
+('T04','C02',2,'M07','2024-04-10 10:00:00'),
+('T05','C04',1,'M04','2024-04-10 12:00:00'),
+('T06','C05',3,'M03','2024-04-12 13:30:00'),
+('T07','C03',2,'M06','2024-04-12 14:30:00'),
+('T08','C02',2,'M04','2024-04-12 14:00:00'),
+('T09','C01',1,'M01','2024-04-12 15:00:00'),
+('T10','C04',1,'M02','2024-04-15 10:30:00');
+
+/*.mode table
+.header on */
+
+select * from staff;
+select * from customers;
+select * from menu;
+select * from transactions;
+
+-- which menu is the most popular?--
+SELECT m.name AS menu_name, COUNT(t.menu_id) AS total_orders
+FROM menu m
+INNER JOIN transactions t ON m.menu_id = t.menu_id
+GROUP BY menu_name
+ORDER BY total_orders DESC
+LIMIT 1;
+
+--customer who ordered the most?
+SELECT c.customer_name, COUNT(t.customer_id) AS total_orders
+FROM customers c
+INNER JOIN transactions t ON c.customer_id = t.customer_id
+GROUP BY c.customer_name
+ORDER BY total_orders DESC
+LIMIT 1;
+
+-- Total order of '2024-04-12' group by menu
+SELECT menu.name AS menu_name, COUNT(t.menu_id) AS total_orders
+FROM menu 
+INNER JOIN transactions t ON menu.menu_id = t.menu_id
+WHERE strftime('%Y-%m-%d', orders_date)  = '2024-04-12'
+GROUP BY menu_name;
+
+-- -- Staff whos make highest total price
+with Total_staff_seller as (
+  SELECT staff.staff_name 
+      ,sum(menu.price) as total_price
+  FROM transactions t
+  inner join menu on menu.menu_id = t.menu_id
+  INNER JOIN staff ON t.staff_id = staff.staff_id
+  GROUP BY staff_name
+)
+
+SELECT staff_name
+      ,max(total_price) as max_price
+from Total_staff_seller;

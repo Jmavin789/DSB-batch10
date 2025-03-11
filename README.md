@@ -4,6 +4,7 @@ My data science and analytics project
 ## My personal projects
 1. Spreadsheets
 2. SQL database
+
 _3. R programmimg_
 _4. Data transfermation_
 _5. Data visualization_
@@ -17,6 +18,6 @@ _10. Looker Dashboard_
 rsresuwan@gmail.com
 
 ## Image 
-![Albert Einstein](https://upload.wikimedia.org/wikipedia/commons/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg)
-![image](https://github.com/user-attachments/assets/5af9940c-7075-4d70-ba1e-ca4b0952d9e6)
 
+https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGVjaHxlbnwwfHwwfHx8MA%3D%3D
+![Albert Einstein](https://upload.wikimedia.org/wikipedia/commons/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg)

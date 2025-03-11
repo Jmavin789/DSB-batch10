@@ -18,5 +18,4 @@ _10. Looker Dashboard_
 rsresuwan@gmail.com
 
 ## Image 
-![Albert Einstein](https://upload.wikimedia.org/wikipedia/commons/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg)
-
+![Spider](jean-philippe-delberghe-9XAnXWHu9_4-unsplash.jpg)

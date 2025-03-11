@@ -4,18 +4,19 @@ My data science and analytics project
 ## My personal projects
 1. Spreadsheets
 2. SQL database
-_3. R programmimg
-4. Data transfermation
-5. Data visualization
-6. Statistics
-7. Machine learning
-8. Intro to Python
-9. Essential Python for Data analyst
-10. Looker Dashboard
-_
+_3. R programmimg_
+_4. Data transfermation_
+_5. Data visualization_
+_6. Statistics_
+_7. Machine learning_
+_8. Intro to Python_
+_9. Essential Python for Data analyst_
+_10. Looker Dashboard_
+
 ## Contact Me
 rsresuwan@gmail.com
 
 ## Image 
 ![Albert Einstein](https://upload.wikimedia.org/wikipedia/commons/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg)
+![image](https://github.com/user-attachments/assets/5af9940c-7075-4d70-ba1e-ca4b0952d9e6)
 
